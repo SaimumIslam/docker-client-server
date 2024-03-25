@@ -1,0 +1,21 @@
+.container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.text {
+    margin: 0;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.btn__delete {
+    padding: 5px;
+    background-color: rgb(127, 20, 20);
+    font-size: 12px;
+}

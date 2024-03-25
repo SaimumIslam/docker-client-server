@@ -1,0 +1,6 @@
+{
+  // only for vs code absolute import
+    "compilerOptions": {
+      "baseUrl": "src"
+    },
+}
