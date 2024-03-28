@@ -1,0 +1,37 @@
+version: '3.7'
+
+
+services:
+  frontend:
+    build: ./client
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:app
+    networks:
+      - mynetwork
+    depends_on:
+      - backend
+
+  backend:
+    build: ./server
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:code
+    networks:
+      - mynetwork
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
+    networks:
+      - mynetwork
+    depends_on:
+      - frontend
+      - backend
+
+networks:
+  mynetwork:
+    driver: bridge
