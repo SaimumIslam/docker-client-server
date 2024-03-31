@@ -6,8 +6,6 @@ services:
     build: ./client
     ports:
       - 3000:3000
-    volumes:
-      - ./:app
     networks:
       - mynetwork
     depends_on:
@@ -17,8 +15,6 @@ services:
     build: ./server
     ports:
       - 8000:8000
-    volumes:
-      - ./:code
     networks:
       - mynetwork
 
