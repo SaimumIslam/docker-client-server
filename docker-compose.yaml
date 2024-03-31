@@ -5,7 +5,7 @@ services:
   frontend:
     build: ./client
     ports:
-      - 3000:3000
+      - 3000:80
     networks:
       - mynetwork
     depends_on:
