@@ -1,6 +1,6 @@
 FROM python:3.10-slim
 
-# Set environment variables
+# not to write bytecode .pyc files
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
